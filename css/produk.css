@@ -1,5 +1,18 @@
 @import url(../vendor/bootstrap/bootstrap-icons.css);
 
+:root {
+    --color-primary: #561C24 !important;
+    --color-secondary: #6D2932;
+    --color-tertiary: #C7B7A3;
+    --color-background: #E8D8C4;
+}
+
+@font-face {
+    src: url(../fonts/poppins.woff2);
+    font-family: 'Poppins';
+ }
+  
+
 body {
     font-family: 'Poppins';
 }
@@ -32,3 +45,4 @@ section.produk {
 }
 
 /* Tambahan css produk tulis setelah kode ini */
+

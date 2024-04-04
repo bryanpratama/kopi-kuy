@@ -16,6 +16,13 @@ Kode di bawah ini untuk mengatur nav sampai footer agar memiliki tampilan flexib
 selengkapnya akan di bahas di hari ke 3
 */
 
+:root {
+   --color-primary: #561C24;
+   --color-secondary: #6D2932;
+   --color-tertiary: #C7B7A3;
+   --color-background: #E8D8C4;
+}
+
 nav,
 header,
 section,
@@ -135,10 +142,10 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: #198754;
+   background-color: var(--color-primary);
 
    /* box-shadow membuat efek bayangan */
-   box-shadow: 0 3px 7px -2px #000;
+   box-shadow: 0 3px 7px -2px var(--color-secondary);
 
    /* width mengatur lebar elemen. 100% agar lebarnya full dari kiri sampai kanan layar */
    width: 100%;
@@ -174,10 +181,23 @@ div.navigasi {
    margin-right: 15px;
 }
 
+.navbar a {
+   color: white;
+}
+
 nav a {
-   color: #fff;
+   color: #ffffff;
    padding-left: 8px;
    padding-right: 8px;
+}
+
+.navbar a:hover {
+   color: chocolate;
+}
+
+.navbar-scrolled {
+   background-color: black;
+   box-shadow      : 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 a.shop {
@@ -186,7 +206,7 @@ a.shop {
 
 a.chat {
    margin-right: 30px;
-   background-color: rgb(8, 69, 8);
+   background-color: var(--color-secondary);
    color: #fff;
    padding-top: 5px;
    padding-right: 15px;
@@ -252,7 +272,7 @@ section.best-seller {
    position: relative;
 
    /* background-color mengatur warna latar belakang elemen */
-   background-color: #EEE6DC;
+   background-color: var(--color-background);
 
    /* text-align mengatur rata tulisan, bisa bernilai: left, right, center, justify */
    text-align: center;
@@ -321,7 +341,7 @@ div.produk img {
    border-radius: 15px;
 
    /* box-shadow membuat efek bayangan */
-   box-shadow: 0 3px 10px -2px #000;
+   box-shadow: 0 3px 10px -2px var(--color-secondary);
 }
 
 /*
@@ -390,8 +410,8 @@ section.about-us p:nth-child(4) {
 /* OUR TEAM */
 
 section.our-team {
-   background-color: #EEE6DC;
-   box-shadow: inset 0px 0px 23px -6px #707070;
+   background-color: var(--color-background);
+   box-shadow: inset 0px 0px 23px -6px var(--color-secondary);
    text-align: center;
 }
 
@@ -463,7 +483,7 @@ div.testimoni {
    display: flex;
    flex-wrap: wrap;
    padding: 35px 50px;
-   box-shadow: 0px 0px 12px -10px #000;
+   box-shadow: 0px 0px 12px -10px var(--color-secondary);
    background-color: #fff;
 }
 
@@ -517,18 +537,19 @@ section.contact-us iframe {
 }
 
 div.kontak {
-   width: 30%;
+   width: 25%;
    /* color mengatur warna tulisan */
-   color: green;
+   color: black;
    text-align: center;
-   margin-top: 50px;
+   margin-top: 150px;
+   margin-bottom: 10px;
 }
 
 
 /* FOOTER */
 
 footer {
-   background-color: #198754;
+   background-color: #561C24;
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;
@@ -544,6 +565,7 @@ footer div.navigasi {
 footer div.navigasi a {
    padding: 8px;
 }
+
 
 
 

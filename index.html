@@ -8,38 +8,73 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Website Kopi Kuy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/produk.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
 </head>
 
 <body>
-    <nav>
-        <img class="logo" src="images/logo/logo_kuy.png">
-        <div class="navigasi">
-            <a href="#best-seller">Best Seller</a>
-            <a href="#our-team">Our Team</a>
-            <a href="#review">Review</a>
-            <a href="#contact-us">Contact Us</a>
+    <nav class="navbar navbar-dark --color-primary navbar-expand-lg bisadicopy fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo/logo_kuy.png" height="40" alt="logo kopi kuy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11"
+                aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav11">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#review">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="produk.html">Shop</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light ms-md-3" href="https://wa.me/6281290465033"><i
+                        class="bi bi-whatsapp"></i> Chat</a>
+            </div>
         </div>
-        <a class="shop" href="produk.html">Shop</a>
-        <a class="chat" href="https://wa.me/628123456?text=Saya ingin bertanya" target="_blank">Chat</a>
     </nav>
 
     <!--Tulis kode header mulai di baris 28-->
 
     <header>
-        <div class="kiri">
-            <h1>Kopi kuy <img src="images/icon/icon_kopi.svg" alt=""></h1>
-            <p>Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan 
-                high quality Coffee untuk para pelanggannya.</p>
-            <p>dapat dibeli :</p>
-            <div class="olshop">
-                <img src="images/logo/logo_bukalapak.png" alt="">
-                <img src="images/logo/logo_shopee.png" alt="">
-                <img src="images/logo/logo_tokopedia.png" alt="">
+        <section class="hero" id="home">
+            <div class="kiri">
+                <h1>Kopi kuy <img src="images/icon/icon_kopi.svg" alt=""></h1>
+                <p>Kopi Kuy merupakan sebuah startup kopi retail yang ingin menyajikan 
+                    high quality Coffee untuk para pelanggannya.</p>
+                <p>dapat dibeli :</p>
+                <div class="olshop">
+                    <img src="images/logo/logo_bukalapak.png" alt="">
+                    <img src="images/logo/logo_shopee.png" alt="">
+                    <img src="images/logo/logo_tokopedia.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="kanan">
-            <img src="images/header/header1.png" alt="">
-        </div>
+            <div class="kanan">
+                <img src="images/header/header1.png" alt="">
+            </div>
+        </section>
+        
     </header>
 
     <main>
@@ -155,38 +190,59 @@
                     oleh kopi kuy , banyak banget game nya!"</p>
             </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7932.
             741866032694!2d106.668581!3d-6.214715!3m2!1i1024!2i768!4f13.
             1!3m3!1m2!1s0x2e69f9912c7f297b%3A0xe5a3a671dae861ab!2sKopi%20kuy
             !5e0!3m2!1sid!2sid!4v1680617229460!5m2!1sid!2sid" frameborder="0"></iframe>
             <div class="kontak">
-                <img src="images/icon/icon_phone.png" alt="">
+                <!-- <img src="images/icon/icon_phone.png" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/></svg>
                 <p>Telp: +62 (812) 9046 5034</p>
             </div>
             <div class="kontak">
-                <img src="images/icon/icon_mail.png" alt="">
+                <!-- <img src="images/icon/icon_mail.png" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
                 <p>Email: hello@kopikuy.com</p>
             </div>
             <div class="kontak">
-                <img src="images/icon/icon_instagram.png" alt="">
+                <!-- <img src="images/icon/icon_instagram.png" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z"/></svg>
                 <p>Instagram: @kopi.kuy</p>
+            </div>
+            <div class="kontak">
+                <!-- <img src="images/icon/icon_instagram.png" alt=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                <p>Twitter: @kopi.kuy</p>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="navigasi">
-            <a href="#best-seller" >Best Seller</a>
-            <a href="#our-team" >Our Team</a>
-            <a href="#review" >Review</a>
-            <a href="#contact-us" >Contact Us</a>
-            
+    <footer class="riki-block footer-small py-4 --color-primary">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+              <ul class="nav justify-content-center justify-content-md-start">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html#best-seller">Best seller</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#our-team">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#review">Review</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-12 col-md-4 mt-4 mt-md-0 text-center text-md-right">
+                © 2024 Kopi Kuy. All Rights Reserved
+            </div>
+          </div>
         </div>
-        <div>
-            <p>
-                Copyright kopi kuy: © 2024 Kopi Kuy. All Rights Reserved </p>
-        </div>
-    </footer>
+      </footer>
         
    
 

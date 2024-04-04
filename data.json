@@ -1,41 +1,86 @@
 {
-    "arabica": [
+    "Arabica": [
         {
-            "foto": "images/produk/product_capuchino.jpg",
-            "nama": "Cappuccino Arabica",
-            "size": "500 Gram",
-            "harga": "200.000",
-            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop"
+            "nama": "Arabica Abesinia",
+            "foto": "images/custom/arabica/arabica1.jpg",
+            "harga": "35.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
-            "foto": "images/produk/product_espresso.jpg",
-            "nama": "Pahit Arabica",
-            "size": "100 Gram",
-            "harga": "100.000",
-            "link": "https://www.google.com/search?q=pahit+arabica&tbm=shop"
+            "nama": "Arabica Pasumah",
+            "foto": "images/custom/arabica/arabica2.jpg",
+            "harga": "40.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
-            "foto": "images/produk/product_latte.jpg",
-            "nama": "Latte Arabica",
-            "size": "150 Gram",
-            "harga": "150.000",
-            "link": "https://www.google.com/search?q=latte+arabica&tbm=shop"
+            "nama": "Arabica Marago",
+            "foto": "images/custom/arabica/arabica3.jpg",
+            "harga": "37.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Arabica Typica",
+            "foto": "images/custom/arabica/arabica4.jpg",
+            "harga": "42.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         }
     ],
-    "robusta": [
+    "Robusta": [
         {
-            "foto": "images/produk/product_kopi_susu.jpg",
-            "nama": "Kopsus Robusta",
-            "size": "100 Gram",
-            "harga": "500.000",
-            "link": "https://www.google.com/search?q=kopi+susu+robusta&tbm=shop"
+            "nama": "Kopi Robusta Temanggung",
+            "foto": "images/custom/robusta/robusta1.jpg",
+            "harga": "36.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
-            "foto": "images/produk/product_latte.jpg",
-            "nama": "Latte Robusta",
-            "size": "150 Gram",
-            "harga": "150.000",
-            "link": "https://www.google.com/search?q=latte+robusta&tbm=shop"
+            "nama": "Kopi Robusta Pupuan",
+            "foto": "images/custom/robusta/robusta3.jpg",
+            "harga": "44.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Robusta Flores",
+            "foto": "images/custom/robusta/robusta4.jpg",
+            "harga": "41.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Robusta Toraja",
+            "foto": "images/custom/robusta/robusta5.jpg",
+            "harga": "39.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         }
+    ],
+    "Non Kopi": [
+        {
+            "nama": "Es Teh Manis",
+            "foto": "https://fajar.co.id/wp-content/uploads/2023/09/IMG_0741.jpg",
+            "harga": "100.000",
+            "size": "200 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Soul Blast",
+            "foto": "images/custom/bleach.jpg",
+            "harga": "41.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Goku Drink",
+            "foto": "images/custom/dragon-ball.jpg",
+            "harga": "39.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        }
+
     ]
 }
