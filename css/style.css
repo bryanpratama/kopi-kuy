@@ -9,6 +9,9 @@
 html {
    /* scroll-behavior: smooth agar scroll ketika klik pada navigasi menjadi halus */
    scroll-behavior: smooth;
+ 
+
+
 }
 
 /* 
@@ -21,7 +24,247 @@ selengkapnya akan di bahas di hari ke 3
    --color-secondary: #6D2932;
    --color-tertiary: #C7B7A3;
    --color-background: #E8D8C4;
+
+   --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
 }
+.container-custom {
+   width  : 100%;
+   padding: 0 2rem;
+   margin : 0 auto;
+}
+
+.hero {
+   position: relative;
+   height  : 100vh;
+   overflow: hidden;
+   /* padding-top: -30%; */
+   /* display: grid; */
+   /* display: flex; */
+
+}
+
+.hero-bg-home {
+   position  : absolute;
+   top       : 50%;
+   left      : 50%;
+   min-width : 100%;
+   min-height: 100%;
+   width     : auto;
+   height    : auto;
+   transform : translateX(-50%) translateY(-50%);
+}
+
+header {
+   /* height: 60px; */
+   background-image: url(../images/custom/bg1.jpg) ;
+   background-size: cover;
+   /* top: unset; */
+    /* height: -100px; */
+   /* bottom: -60px; */
+}
+#steam1 img {
+   position:relative;
+   top:200px;
+   left:-6px;
+   }
+   
+   #anima1 {
+   display: flex;
+   justify-content: center;
+   width:280px;
+   position:absolute;
+   }
+
+   .smoke {
+      padding: 80px;
+      margin-left: 280px;
+     
+   }
+   
+   #anima1 span {
+   position:relative;
+   bottom:-120px;
+   margin: 0 2px 50px;
+   min-width:8px;
+   height:120px;
+   background:white;
+   border-radius:50%;
+   animation: animate 4s linear infinite;
+   opacity: 0;
+   filter: blur(8px);
+   animation-delay: calc(var(--i) * 2s);
+   }
+   
+   @keyframes animate {
+   0% {
+   transform: translateY(0) scaleX(1);
+   opacity: 0;
+   }
+   15% {
+   opacity: 1;
+   }
+   50% {
+   transform: translateY(-75px) scaleX(5);
+   }
+   95% {
+   opacity: 0;
+   }
+   100% {
+   transform: translateY(-150px) scaleX(10);
+   }
+   }
+
+   section.hero::before,
+header::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 76px;
+
+   /* background-image untuk menambahkan gambar sebagai background */
+   /* background-image: url(../images/background/garis-atas.png); */
+
+   /*background-size agar gambar latar menyesuaikan tinggi / lebar elemen */
+   background-size: cover;
+
+   top: -60px;
+   left: 0;
+}
+
+header::after {
+   filter: grayscale(0%) brightness(70%) contrast(400%);
+   /* mix-blend-mode: multiply; */
+
+   background-image: url(../images/background/garis-atas.png);
+   top: unset;
+   bottom: -240px;
+}
+
+header {
+   /* height: 80px; */
+   /* margin-bottom: 90px; */
+   /* padding-bottom: 90px; */
+}
+
+main {
+   margin-top: 0;
+}
+
+
+
+.about-des {
+   color: white;
+   max-width: 80%;
+}
+
+
+.about .row {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   margin-left: auto;
+}
+
+.about .row .image {
+   flex: 1 1 40rem;
+}
+
+.about .row .image img {
+   width: 100%;
+   animation: aboutImage 4s linear infinite;
+}
+
+@keyframes aboutImage {
+
+   0%,
+   100% {
+       transform: scale(.8);
+       border-radius: var(--border-radius-hover);
+   }
+
+   50% {
+       transform: scale(.8);
+       border-radius: var(--border-radius);
+   }
+}
+
+.about .row .content {
+   flex: 1 1 42rem;
+}
+
+.about .row .content .title {
+   color: var(--main-color);
+   font-size: 3rem;
+   padding-top: 4rem;
+}
+
+.about .row .content h3 {
+   color: var(--main-color);
+   font-size: 20px;
+   padding-top: 4rem;
+}
+
+.about .row .content p {
+   color: var(--main-color);
+   font-size: 14px;
+   padding: 1rem 0;
+}
+
+
+.about .row .content .icons-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3rem;
+   padding-top: 2rem;
+}
+
+.about .row .content .icons-container .icons {
+   flex: 1 1 12rem;
+   padding: 1rem;
+   text-align: center;
+   border: var(--border);
+   border-radius: var(--border-radius);
+}
+
+.about .row .content .icons-container .icons img {
+   height: 4rem;
+}
+
+.about .row .content .icons-container .icons h3 {
+   font-size: 1.3rem;
+   padding-top: 1rem;
+   color: var(--main-color);
+}
+
+.zoom {
+   /* padding: 50px; */
+   /* background-color: green; */
+   transition: transform 2s; /* Animation */
+   /* width: 200px;
+   height: 200px; */
+   margin: 0 auto;
+ }
+ 
+ .zoom:hover {
+   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
+
+ .zoom1 {
+   /* padding: 50px; */
+   /* background-color: green; */
+   transition: transform 1s; /* Animation */
+   /* width: 200px;
+   height: 200px; */
+   margin: 0 auto;
+ }
+ 
+ .zoom1:hover {
+   transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
 
 nav,
 header,
@@ -142,10 +385,10 @@ nav {
    untuk pengguna vscode silahkan arahkan mouse ke kotak warna di bawah
    untuk mengganti warna sesuai keinginan
    */
-   background-color: var(--color-primary);
+   /* background-color: var(--color-primary); */
 
    /* box-shadow membuat efek bayangan */
-   box-shadow: 0 3px 7px -2px var(--color-secondary);
+   /* box-shadow: 0 3px 7px -2px var(--color-secondary); */
 
    /* width mengatur lebar elemen. 100% agar lebarnya full dari kiri sampai kanan layar */
    width: 100%;
@@ -181,8 +424,22 @@ div.navigasi {
    margin-right: 15px;
 }
 
+.navbar {
+    transition : all 0.5s;
+    font-family: 'Roboto', sans-serif;
+}
+
 .navbar a {
-   color: white;
+    color: white;
+}
+
+.navbar a:hover {
+    color: chocolate;
+}
+
+.navbar-scrolled {
+    background-color: var(--color-primary);
+    box-shadow      : 0 3px 10px var(--color-primary);
 }
 
 nav a {
@@ -191,14 +448,6 @@ nav a {
    padding-right: 8px;
 }
 
-.navbar a:hover {
-   color: chocolate;
-}
-
-.navbar-scrolled {
-   background-color: black;
-   box-shadow      : 0 3px 10px rgba(0, 0, 0, 0.15);
-}
 
 a.shop {
    margin-right: 100px;
@@ -238,7 +487,12 @@ section {
    padding-bottom: 80px;
 
    /* margin mengatur jarak ke luar */
-   margin-bottom: 80px;
+   margin-bottom: 40px;
+   
+}
+
+header {
+   height: 120vh;
 }
 
 /* penulisan CSS dapat digabung dengan beberapa elemen */
@@ -247,6 +501,7 @@ header div.kanan {
    /* width mengatur lebar elemen. 50% artinya setengah ukuran elemen pembungkus */
    width: 50%;
    padding: 50px;
+   margin-top: -150px;
 }
 
 header h1 {
@@ -270,6 +525,7 @@ div.olshop img {
 
 section.best-seller {
    position: relative;
+   /* height: 100vh; */
 
    /* background-color mengatur warna latar belakang elemen */
    background-color: var(--color-background);
@@ -291,7 +547,7 @@ section.best-seller::after {
    height: 76px;
 
    /* background-image untuk menambahkan gambar sebagai background */
-   background-image: url(../images/background/garis-atas.png);
+   /* background-image: url(../images/background/garis-atas.png); */
 
    /*background-size agar gambar latar menyesuaikan tinggi / lebar elemen */
    background-size: cover;
@@ -370,17 +626,23 @@ div.produk p {
 
 section.about-us {
    /* max-width: 80%; mengatur lebar maksimal elemen tidak boleh melebihi 80% layar */
-   max-width: 80%;
+   /* max-width: 80%; */
 
    /* margin-left dan margin-right auto akan membuat posisi elemen berada di tengah */
    margin-left: auto;
    margin-right: auto;
+   margin-bottom: 1px;
    text-align: center;
+
+   background-image: url(../images/custom/bg4.jpg) ;
+   background-size: cover;
+   height: 100vh;
 }
 
 section.about-us h2 {
    margin-bottom: 30px;
    width: 100%;
+   color: white;
 }
 
 section.about-us img {
@@ -400,10 +662,14 @@ yang ada di dalam <section class="about-us">
 
 section.about-us p:nth-child(2) {
    margin-bottom: 40px;
+   color: white;
+
 }
 
 section.about-us p:nth-child(4) {
    margin-top: 40px;
+   color: white;
+
 }
 
 
@@ -413,6 +679,9 @@ section.our-team {
    background-color: var(--color-background);
    box-shadow: inset 0px 0px 23px -6px var(--color-secondary);
    text-align: center;
+   /* padding-bottom: px; */
+   margin-bottom: 0px;
+
 }
 
 section.our-team h2 {
@@ -431,7 +700,8 @@ section.our-team>p {
 }
 
 div.team {
-   width: 25%;
+   width: 23%;
+   /* max-width: 23%; */
    padding: 20px;
 }
 
@@ -441,7 +711,20 @@ div.team img {
    object-fit: cover;
    box-shadow: 0 3px 10px -2px #000;
    border-radius: 50px 0px 50px 0px;
-   margin-bottom: 10px;
+   margin-bottom: 30px;
+}
+
+div.team img:hover {
+   width: 100%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   box-shadow: 0 3px 10px -2px #000;
+   transition: all 0.5s ease-in-out;
+   /* transform: scale(0.9); */
+   /* margin-bottom: 10px; */
+
+   border-radius: 0px 50px 0px 50px;
+   /* margin-bottom: 20px; */
 }
 
 
@@ -449,19 +732,24 @@ div.team img {
 
 section.review {
    background-image: url(../images/background/bg-review.svg);
+   background-image: url(../images/custom/bg3.jpg);
    /* 
       background-size: contain;
       membuat gambar latar belakang tidak terpotong
    */
    background-size: contain;
+   background-size: cover;
+   
 
    /* 
       background-repeat: no-repeat;
       membuat gambar latar belakang tidak diulang (duplikat)
    */
    background-repeat: no-repeat;
+   
    padding-left: 40px;
    padding-right: 40px;
+   margin-bottom: 0px;
    justify-content: space-around;
    /* align-items: stretch; membuat tinggi elemen di dalam .review .baris seragam */
    text-align: center;
@@ -470,6 +758,7 @@ section.review {
 section.review h2 {
    margin-bottom: 20px;
    width: 100%;
+   color: white;
 }
 
 section.review>p {
@@ -497,7 +786,7 @@ div.testimoni img {
 div.profile {
    text-align: left;
    display: block;
-   margin-bottom: 30px;
+   margin-bottom: 0px;
    width: calc(100% - 75px);
 }
 
@@ -513,6 +802,7 @@ div.testimoni>p {
 
 *[data-from="tmp"]>* {
    position: relative;
+   
 }
 
 *[data-from="tmp"]>*:nth-child(1):before {
@@ -523,11 +813,20 @@ div.testimoni>p {
    font-size: 13px;
    z-index: 10;
    text-decoration: line-through;
+   
 }
 
 /* CONTACT US */
 section.contact-us {
-   margin-bottom: 20px;
+   margin-bottom: 0px;
+   /* background-image: url(../images/custom/bg1.jpg) ;
+   background-size: cover; */
+   background-color: var(--color-primary);
+   margin-bottom: 0px;
+   padding-top: 35px;
+   padding-bottom: 0px;
+
+   
 }
 
 section.contact-us iframe {
@@ -546,6 +845,9 @@ div.kontak {
 }
 
 
+
+
+
 /* FOOTER */
 
 footer {
@@ -553,8 +855,9 @@ footer {
    padding-top: 15px;
    padding-bottom: 15px;
    color: #fff;
-   padding-right: 40px;
-   padding-left: 40px;
+   /* padding-right: 40px;
+   padding-left: 40px; */
+   /* height: 94vh; */
 }
 
 footer div.navigasi {

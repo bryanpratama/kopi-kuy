@@ -9,19 +9,21 @@
     <title>Produk</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css">
+
     <link rel="stylesheet" href="css/produk.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.3.min.js"></script>
-    <style data-info="kode css bisa ditulis di bawah sini atau di css/produk.css">
-
-    </style>
+    <script src="js/jquery-2.2.3.min.js"></script> 
+    <script src="js/jquery.mycart.js"></script>
+    <style data-info="kode css bisa ditulis di bawah sini atau di css/produk.css"></style>
 </head>
 
-<body data-info="tulis kode bootstrap di baris 22">
+<body class="parallax" data-info="tulis kode bootstrap di baris 22">
 
-    <nav class="navbar navbar-dark --color-primary navbar-expand-lg bisadicopy">
+    <nav class="navbar navbar-dark --color-primary navbar-expand-lg bisadicopy fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo/logo_kuy.png" height="40" alt="logo kopi kuy">
@@ -32,7 +34,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav11">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                         <a class="nav-link text-light" href="index.html#best-seller">Best Seller</a>
                     </li>
                     <li class="nav-item">
@@ -43,10 +45,11 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact-us">Contact Us</a>
-                    </li>
+                    </li> -->
                 </ul>
+                <a class="btn btn-outline-light ms-md-3" href="index.html"> HOME</a>
                 <a class="btn btn-outline-light ms-md-3" href="https://wa.me/6281290465033"><i
-                        class="bi bi-whatsapp"></i> Chat</a>
+                            class="bi bi-whatsapp"></i> Chat</a>
             </div>
         </div>
     </nav>
@@ -54,11 +57,57 @@
     <main>
         <section class="riki-block produk text-center my-5 py-5">
             <div class="container">
-                <h1>Pilih Produk Anda</h1>
-                <p class="fs-4">Nikmati kualitas terbaik biji kopi pilihan fresh langsung dari petani </p>
-                <hr class="border border-dark border-4 opacity-75" style="border-color: rgba(var(--color-primary ));">
+                <h1 class="text-white">Choose your product</h1>
+                <p class="text-white fs-4">Enjoy the best quality coffee beans selected fresh directly from farmers </p>
+                <hr class="border border-white border-4 opacity-75" style="border-color: rgba(var(--color-primary ));">
 
                 <!-- Ini Untuk Select -->
+                <!-- <div class="row mb-5 bg-filter">
+                    <div class="col-md-12 col-lg-3 col-xl-4">
+                        <input type="search" id="cari" value="" class="form-control" placeholder="Cari Produk" />
+                    </div>
+    
+                    <div class=" col-md-12 col-lg-3">
+                        <select class="form-select" id="kategori">
+                            <option value="semua" selected>Semua Kategori</option>
+                            <option value="signature">Signature</option>
+                            <option value="classic">Classic</option>
+                            <option value="fancy">Fancy</option>
+                            <option value="arabica">Arabica</option>
+                        <option value="robusta">Robusta</option>
+                        <option value="nonkopi">Non Kopi</option>
+                        </select>
+    
+                    </div>
+                    <div class=" col-md-12 col-lg-3">
+                        <select class="form-select" id="select_sort">
+                            <option selected disabled>Urutkan Berdasarkan</option>
+                            <option value="most-popular">Most Popular</option>
+                            <option value="harga-terendah">Harga Terendah</option>
+                            <option value="harga-tertinggi">Harga Tertinggi</option>
+                        </select>
+    
+                    </div>
+    
+                    <div class="col">
+                        <button type="button" class="mt-sm-2 mt-md-0 mx-auto btn btn-dark text-white" id="filter">
+                            Terapkan
+                        </button>
+                        <button class="mt-sm-2 mt-md-0 mx-auto btn btn-danger my-cart-icon"><i
+                                class=" bi bi-cart-check-fill"></i><span
+                                class="badge badge-notify my-cart-badge">0</span></button>
+    
+                    </div>
+                </div>
+    
+                <div id="baris_produk" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-4"> -->
+                    <!--- akan terisi data dari JSON -->
+                <!-- </div> -->
+
+ 
+
+                <!-- lama -->
+
                 <div class="form-floating">
                     <select class="form-select " id="select_kopi" aria-label="Floating label select example">
                         <option selected disabled>-</option>
@@ -146,8 +195,33 @@
         </section>
     </main>
 
+    <div class="modal fade" id="my-cart-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header"></button>
+                <h4 class="modal-title" id="myModalLabel"><i class="bi bi-cart-check-fill"></i> My
+                    Cart</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table-responsive" id="my-cart-table">
+
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"
+                    onclick="$('#my-cart-modal').modal('hide');">Close</button>
+                <button class="btn btn-primary my-cart-checkout">
+                    Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
     <footer class="riki-block footer-small py-4 --color-primary">
-        <div class="container">
+        <p class="love">Made with <i class="icon ion-heart"></i> ❤ By Bryan Pratama Putra</p>         
+
+        <!-- <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-md-8">
               <ul class="nav justify-content-center justify-content-md-start">
@@ -170,7 +244,7 @@
                 © 2024 Kopi Kuy. All Rights Reserved
             </div>
           </div>
-        </div>
+        </div> -->
       </footer>
 
 

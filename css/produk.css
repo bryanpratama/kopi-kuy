@@ -15,7 +15,52 @@
 
 body {
     font-family: 'Poppins';
+    background-image: url(../images/custom/bg1.jpg) ;
+   background-size: cover;
 }
+
+
+.parallax {
+    /* The image used */
+    background-image: url(../images/custom/bg1.jpg);
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url(../images/custom/bg2.jpg);
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax3 {
+    /* The image used */
+    background-image: url(../images/custom/bg3.jpg);
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
 footer a.nav-link {
     color: #fff;
@@ -23,7 +68,7 @@ footer a.nav-link {
 
 footer {
     color: #fff;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
 }
 
 section.produk {
@@ -46,3 +91,55 @@ section.produk {
 
 /* Tambahan css produk tulis setelah kode ini */
 
+.nav-item {
+    color: #666;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav-item:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px white;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+}
+
+.bg-filter {
+    background-color: lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+
+
+.btn-darkcyan:hover {
+    background-color: rgb(1, 77, 77);
+}
+
+.card {
+    border: 1px dark solid;
+}
+
+.produk .card-title {
+    height: 20px;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+}
+
+.terjual {
+    font-size: 12px;
+}

@@ -1,85 +1,116 @@
 {
     "Arabica": [
         {
-            "nama": "Arabica Abesinia",
-            "foto": "images/custom/arabica/arabica1.jpg",
+            "id": 1,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
             "harga": "35.000",
-            "size": "250 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "226"
         },
         {
-            "nama": "Arabica Pasumah",
-            "foto": "images/custom/arabica/arabica2.jpg",
+            "id": 2,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
+            "harga": "80.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "100"
+        },
+        {
+            "id": 3,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
             "harga": "40.000",
-            "size": "300 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "198"
         },
         {
-            "nama": "Arabica Marago",
-            "foto": "images/custom/arabica/arabica3.jpg",
+            "id": 4,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
             "harga": "37.000",
-            "size": "250 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
-        },
-        {
-            "nama": "Arabica Typica",
-            "foto": "images/custom/arabica/arabica4.jpg",
-            "harga": "42.000",
-            "size": "300 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "212"
         }
     ],
     "Robusta": [
         {
-            "nama": "Kopi Robusta Temanggung",
-            "foto": "images/custom/robusta/robusta1.jpg",
-            "harga": "36.000",
-            "size": "250 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 5,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
+            "harga": "30.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "226"
         },
         {
-            "nama": "Kopi Robusta Pupuan",
-            "foto": "images/custom/robusta/robusta3.jpg",
-            "harga": "44.000",
-            "size": "300 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 6,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
+            "harga": "86.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "100"
         },
         {
-            "nama": "Kopi Robusta Flores",
-            "foto": "images/custom/robusta/robusta4.jpg",
-            "harga": "41.000",
-            "size": "300 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 7,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
+            "harga": "43.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "198"
         },
         {
-            "nama": "Kopi Robusta Toraja",
-            "foto": "images/custom/robusta/robusta5.jpg",
-            "harga": "39.000",
-            "size": "250 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 8,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
+            "harga": "33.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "212"
         }
     ],
     "Non Kopi": [
         {
-            "nama": "Es Teh Manis",
-            "foto": "https://fajar.co.id/wp-content/uploads/2023/09/IMG_0741.jpg",
-            "harga": "100.000",
-            "size": "200 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 9,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
+            "harga": "32.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "226"
         },
         {
-            "nama": "Soul Blast",
-            "foto": "images/custom/bleach.jpg",
+            "id": 10,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
             "harga": "41.000",
-            "size": "300 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "100"
         },
         {
-            "nama": "Goku Drink",
-            "foto": "images/custom/dragon-ball.jpg",
-            "harga": "39.000",
-            "size": "250 Ml",
-            "link": "https://shopee.co.id/eaifjlesjfi"
+            "id": 11,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "250 ML",
+            "harga": "44.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "198"
+        },
+        {
+            "id": 12,
+            "foto": "images/produk/coffe1.jpg",
+            "nama": "Cappuccino",
+            "size": "500 ML",
+            "harga": "36.000",
+            "link": "https://www.google.com/search?q=cappuccino+arabica&tbm=shop",
+            "terjual": "212"
         }
 
     ]
