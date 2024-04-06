@@ -27,6 +27,20 @@
             "harga": "42.000",
             "size": "300 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Tubruk Arabica",
+            "foto": "images/produk/coffe1.jpg",
+            "harga": "39.000",
+            "size": "240 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Arabica Cipete Blend",
+            "foto": "images/produk/coffe2.jpg",
+            "harga": "41.000",
+            "size": "280 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
         }
     ],
     "Robusta": [
@@ -34,14 +48,14 @@
             "nama": "Kopi Robusta Tanggung",
             "foto": "images/custom/robusta/robusta1.jpg",
             "harga": "36.000",
-            "size": "250 Ml",
+            "size": "290 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
             "nama": "Kopi Robusta Pupuan",
             "foto": "images/custom/robusta/robusta3.jpg",
             "harga": "44.000",
-            "size": "300 Ml",
+            "size": "280 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
@@ -55,30 +69,160 @@
             "nama": "Kopi Robusta Toraja",
             "foto": "images/custom/robusta/robusta5.jpg",
             "harga": "39.000",
+            "size": "340 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Robusta Gayo",
+            "foto": "images/produk/coffe3.jpg",
+            "harga": "46.000",
+            "size": "310 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Decaffeinated Robusta",
+            "foto": "images/produk/coffe4.jpg",
+            "harga": "45.000",
+            "size": "330 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        }
+    ],
+    "Liberika": [
+        {
+            "nama": "Kopi Robusta Tanggung",
+            "foto": "images/produk/coffe5.jpg",
+            "harga": "38.000",
+            "size": "260 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Robusta Pupuan",
+            "foto": "images/produk/coffe6.jpg",
+            "harga": "44.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Robusta Flores",
+            "foto": "images/produk/coffe7.jpg",
+            "harga": "43.000",
+            "size": "230 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Kopi Robusta Toraja",
+            "foto": "images/produk/coffe8.jpg",
+            "harga": "36.000",
+            "size": "230 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Arabica Marago",
+            "foto": "images/produk/coffe9.jpg",
+            "harga": "37.000",
+            "size": "210 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Arabica Typica",
+            "foto": "images/produk/coffe10.jpg",
+            "harga": "46.000",
+            "size": "290 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        }
+    ],
+    "Ekselsa": [
+        {
+            "nama": "Sakha Ekselsa",
+            "foto": "images/produk/coffe11.jpg",
+            "harga": "42.000",
+            "size": "320 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Ekselsa Toraja",
+            "foto": "images/produk/coffe12.jpg",
+            "harga": "38.000",
+            "size": "210 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Ekselsa Meranti",
+            "foto": "images/produk/coffe13.jpg",
+            "harga": "48.000",
+            "size": "340 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Maharaja Ekselsa",
+            "foto": "images/produk/coffe14.jpg",
+            "harga": "39.000",
             "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Ekselsa Gayo",
+            "foto": "images/produk/coffe15.jpg",
+            "harga": "43.000",
+            "size": "280 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Ekselsa Coffe Pod",
+            "foto": "images/produk/coffe16.jpg",
+            "harga": "36.000",
+            "size": "260 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         }
     ],
     "Non Kopi": [
         {
-            "nama": "Es Teh Manis",
-            "foto": "https://fajar.co.id/wp-content/uploads/2023/09/IMG_0741.jpg",
+            "nama": "Ice Blend",
+            "foto": "images/custom/ice-blend.jpg",
             "harga": "100.000",
+            "size": "200 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Ice Drink",
+            "foto": "images/custom/ice-drink1.jpg",
+            "harga": "110.000",
+            "size": "300 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Milk Shake",
+            "foto": "images/custom/milk-shake.jpg",
+            "harga": "150.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Milk Tea",
+            "foto": "images/custom/milk-tea.jpg",
+            "harga": "120.000",
+            "size": "250 Ml",
+            "link": "https://shopee.co.id/eaifjlesjfi"
+        },
+        {
+            "nama": "Fruit Tea",
+            "foto": "images/custom/fruit-tea.jpg",
+            "harga": "130.000",
             "size": "200 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
             "nama": "Boba",
             "foto": "images/custom/boba.jpg",
-            "harga": "130.000",
-            "size": "300 Ml",
+            "harga": "140.000",
+            "size": "240 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         },
         {
             "nama": "Teh Hijau",
             "foto": "images/custom/teh-hijau.jpg",
-            "harga": "150.000",
-            "size": "250 Ml",
+            "harga": "160.000",
+            "size": "270 Ml",
             "link": "https://shopee.co.id/eaifjlesjfi"
         }
 

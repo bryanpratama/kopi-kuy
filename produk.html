@@ -116,7 +116,7 @@
                         <option value="nonkopi">Non Kopi</option>
                         <option value="Character">Character Favorit</option>
                     </select>
-                    <label for="select_kopi">Pilih Jenis Produk</label>
+                    <label for="select_kopi">Select Product Type</label>
                 </div>
 
                 <div id="baris_produk"
@@ -252,6 +252,15 @@
     <script src="js/produk.js"></script>
     <script data-info="bisa tulis kode js di js/produk.js ataupun di bawah sini">
 
+const navEl = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56) {
+            navEl.classList.add('navbar-scrolled');
+        } else if (window.scrollY < 56) {
+            navEl.classList.remove('navbar-scrolled');
+        }
+    })
 
     </script>
 </body>

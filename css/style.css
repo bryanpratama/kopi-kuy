@@ -135,10 +135,10 @@ header::after {
 }
 
 header::after {
-   filter: grayscale(0%) brightness(70%) contrast(400%);
+   /* filter: grayscale(0%) brightness(70%) contrast(400%); */
    /* mix-blend-mode: multiply; */
 
-   background-image: url(../images/background/garis-atas.png);
+   background-image: url(../images/background/garis-atas5.png);
    top: unset;
    bottom: -240px;
 }
@@ -174,7 +174,7 @@ main {
 }
 
 .about .row .image img {
-   width: 100%;
+   /* width: 100%; */
    animation: aboutImage 4s linear infinite;
 }
 
@@ -558,7 +558,7 @@ section.best-seller::after {
 
 section.best-seller::after {
    height: 60px;
-   background-image: url(../images/background/garis-bawah.png);
+   background-image: url(../images/background/garis-bawah2.png);
    top: unset;
    bottom: -60px;
 }
@@ -650,7 +650,7 @@ section.about-us img {
       Penulisan width: 800px dan max-width: 100% mengatur agar
       elemen memiliki lebar 800px namun tidak boleh melebihi 100% ukuran layar
    */
-   width: 800px;
+   width: 500px;
    max-width: 100%;
    margin: auto;
 }
@@ -873,6 +873,86 @@ footer div.navigasi a {
 
 
 /* UNTUK kode RESPONSIF hari ke 3 tulis DI BAWAH sini */
+@media (max-width: 1800px) {
+   .smoke {
+      margin-left: 215px;
+      /* margin-bottom: 900px; */
+      /* padding-bottom: -430px; */
+  }
+  #anima1 span {
+   bottom: 1px;
+  }
+}
+
+@media (max-width: 1600px) {
+   .smoke {
+      margin-left: 190px;
+      /* margin-bottom: 900px; */
+      /* padding-bottom: -430px; */
+  }
+  #anima1 span {
+   bottom: 10px;
+  }
+  /* section.about-us {
+   display: flex;
+   flex-wrap: wrap;
+} */
+}
+
+@media (max-width: 1400px) {
+   .smoke {
+      margin-left: 130px;
+      /* margin-bottom: 900px; */
+      /* padding-bottom: -430px; */
+  }
+  #anima1 span {
+   bottom: 40px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+   section.about-us img {
+      width: 400px;
+   }
+   .smoke {
+      margin-left: 60px;
+      
+  }
+  #anima1 span {
+   bottom: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+   section.about-us img {
+      margin-left: -90px;
+      
+   }
+   .smoke {
+      margin-left: 20px;
+  }
+  #anima1 span {
+   bottom: 90px;
+  }
+  header p {
+   font-size: 17px;
+  }
+
+  div.testimoni {
+   width: 80%;
+   margin-bottom: 40px;
+}
+}
+
+@media (max-width: 768px) {
+   .smoke {
+      margin-left: -30px;
+  }
+  header p {
+   font-size: 16px;
+  }
+}
 
 @media (max-width:600px) {
 
@@ -899,6 +979,22 @@ footer div.navigasi a {
       padding: 20px;
       margin-bottom: 30px;
    }
+   .image img {
+      width: 10%;
+   }
+   .smoke {
+      margin-left: 90px;
+  }
+  #anima1 span {
+   bottom: 40px;
+  }
+  section.about-us img {
+   margin-left: 0px;
+   
 }
+}
+
+
+
 
 /* Kode CSS Selesai di sini */
